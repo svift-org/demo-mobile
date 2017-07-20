@@ -10,6 +10,7 @@
   html, body{
     margin: 0;
     padding: 0;
+
   }
 
   #wrapper{
@@ -35,15 +36,41 @@
     position: absolute;
     top: 85px;
     left: 21px;
+    overflow: scroll;
+    text-align: left;
+
+  }
+
+  .screen h3,h4{
+    padding: 0px 20px 0px 20px;
+    font-family: "Lato","Helvetica","Arial",sans-serif;
+  }
+
+  .screen p{
+    padding: 0px 10px 10px 20px;
+    font-family: "Lato","Helvetica","Arial",sans-serif;
+    color: #A1A1A1;
   }
 
   .screen iframe{
+    border: 0;
     height: 521px;
-    width: 295px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    width: 290px;
   }
+
+  .logo{
+    border-bottom: 1px solid grey;
+    margin: 0 20px 0 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo img{
+    width:100px;
+    height: auto;
+    padding: 40px 0 0 0px;
+  }
+
+
 
  
 </style>
@@ -54,7 +81,11 @@
   <div class="content">
     <img src="img/iphone.png">
     <div class="screen">
-      <iframe src="quick-demo/chart-types/bonzai.html"></iframe>
+      <div class="logo"><img src="quick-demo/img/logo_rp.svg"></div>
+      <h3>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</h3>
+      <h4>Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis.</h4>
+      <p>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.</p>
+      <iframe src="quick-demo/chart-types/struggle.html"></iframe>
     </div>
   </div>
 </div>

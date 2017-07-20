@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Demo</title>
+  <meta charset="utf-8">
+</head>
+
+<style type="text/css">
+
+  html, body{
+    margin: 0;
+    padding: 0;
+  }
+
+  #wrapper{
+    text-align: center;
+  }
+
+  .content{
+    height:300px;
+    width: 300px;
+    margin: 10% auto;
+    position: relative;
+  }
+
+  .content img {
+    height:700px;
+    width: auto;
+  }
+
+  .screen{
+    /*background-color: red;*/
+    height: 521px;
+    width: 295px;
+    position: absolute;
+    top: 85px;
+    left: 21px;
+  }
+
+  .screen iframe{
+    height: 521px;
+    width: 295px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+ 
+</style>
+
+<body>
+
+<div id="wrapper">
+  <div class="content">
+    <img src="img/iphone.png">
+    <div class="screen">
+      <iframe src="quick-demo/chart-types/bonzai.html"></iframe>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+  body{
+    margin: 0px 10%;
+    border: 1px solid #ECECEC;
+  }
+
+  img{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  #bottom{
+    margin: 40px 0;
+  }
+
+  #logo img {
+    width: 300px;
+    height: auto;
+    margin-left: 285px;
+    margin-top: 6%;
+    margin-bottom: 2%;
+  }
+
+
+  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7, #chart_8,#chart_9, #chart_10, #chart_11,#chart_12,#chart_13,#chart_14,#chart_15 {
+    text-align: center;
+  }
+
+  #chart_1 iframe{
+    height: 250px;
+    width: 600px;
+    border: 0 none;
+  }
+
+  #chart_2 iframe{
+    height: 400px;
+    width: 800px;
+    border: 0 none;
+    overflow: hidden;
+  }
+
+  #chart_3 iframe{
+    height: 177px;
+    width: 265px;
+    border: 0 none;
+  }
+
+
+  #chart_4 iframe{
+    height: 245px;
+    width: 265px;
+    border: 0 none;
+  }
+
+  #chart_5 iframe{
+    height: 250px;
+    width: 800px;
+    border: 0 none;
+  }
+
+  #chart_6 iframe{
+    height: 250px;
+    width: 800px;
+    border: 0 none;
+  }
+
+  #chart_7 iframe {
+    border: 0 none;
+    height: 300px;
+    width: 410px;
+  }
+
+  #chart_8 iframe {
+      border: 0 none;
+      height: 350px;
+      width: 800px;
+  }
+
+  #chart_9 iframe {
+      border: 0 none;
+      height: 350px;
+      width: 800px;
+  }
+
+  #chart_10 iframe {
+      border: 0 none;
+      height: 150px;
+      width: 340px;
+  }
+
+
+  #chart_11 iframe {
+      border: 0 none;
+      height: 260px;
+  }
+
+
+  #chart_12 iframe {
+      border: 0 none;
+      height: 350px;
+      width: 800px;
+  }
+
+  #chart_13 iframe {
+      border: 0 none;
+      height: 180px;
+  }
+
+  #chart_14 iframe {
+      border: 0 none;
+      height: 670px;
+      width: 800px;
+  }
+
+  #chart_15 iframe {
+      border: 0 none;
+      height: 300px;
+      width: 400px;
+  }
+
+
+
+

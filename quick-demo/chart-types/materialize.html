@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>materialize chart</title>
+</head>
+<body>
+
+<style type="text/css">
+
+.title{
+  text-align: center;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #A1A1A1;
+  margin-bottom: 80px;
+}
+
+.container{
+  height: 500px;
+  width: 800px;
+}
+
+.dots{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 350px;
+  top: 150px;
+  background-color: #FFBE00;
+  border-radius: 1000px;
+  /*transform-origin: 100% 100%;*/
+}
+
+.bigDot{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 350px;
+  top: 200px;
+  background-color: #FFBE00;
+  border-radius: 1000px;
+}
+
+.label{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 360px;
+  top: 280px;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #A1A1A1;
+  opacity: 1;
+  /*opacity: 0*/
+}
+
+
+</style>
+
+
+
+<div class="title">Anzahl der streikenden Lufthansa-Piloten, July 2017</div>
+<div class="label">151 Piloten</div>
+
+
+<script src='../js/anime.js'></script>
+
+<script type="text/javascript">
+
+
+var container = document.body.appendChild(document.createElement('div'));
+container.className = "container";
+
+var offsetY = anime.random(50,300) + 'px';
+var offsetX = anime.random(100,700) + 'px';
+
+// var bigDot = document.createElement('div');
+// bigDot.className = "bigDot";
+// bigDot.style.zIndex = 70;
+// container.appendChild(bigDot);
+
+
+
+for (var i = 0; i <= 100 ; i++) {
+  var dots = document.createElement('div');
+  dots.className = "dots";
+  dots.innerHTML = "";
+  dots.style.zIndex = 7;
+
+  container.appendChild(dots);
+}
+
+var animatedDots = anime({
+  targets: '.dots',
+  autostart: true,
+  // delay: 2000,
+  duration: 5000,
+  height: "1px",
+  width: "1px",
+  translateY: function(target, index) { 
+      return anime.random(-200,200)
+    },
+  translateX: function(target, index) { 
+      return anime.random(-350,350)
+    },
+  easing: 'easeOutQuad',
+  direction: 'reverse',
+  // loop: true,
+  backgroundColor: "#A1A1A1",
+      complete: function(anim) {
+      setTimeout(function(){
+        animatedDots.restart()
+      },2000)
+    }
+});
+
+// var animatedLabel = anime({
+//   targets: '.label',
+//   autostart: true,
+//   // delay: 2500,
+//   duration: 3000,
+//   opacity: 1,
+//         complete: function(anim) {
+//       setTimeout(function(){
+//         animatedLabel.restart()
+//       },5000)
+//     }
+
+// });
+
+
+// var animatedBigDot = anime({
+//   targets: '.bigDot',
+//   autostart: true,
+//   delay: 2000,
+//   duration: 4000,
+//   opacity: 0,
+//   easing: 'easeOutQuad',
+//   direction: 'reverse',
+//   loop: true
+// });
+
+
+
+</script>
+
+</body>
+</html>

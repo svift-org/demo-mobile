@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Mobile Demo</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,800" rel="stylesheet">
   <meta charset="utf-8">
 </head>
 
@@ -11,7 +12,27 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
+  }
 
+  header{
+    font-family: "Muli", "Arial", sans-serif;
+    font-size: 2em;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 500px;
+    color: #FFBE00;
+    font-weight: 800;
+  }
+
+  .subtitle{
+    font-family: "Muli", "Arial", sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    max-width: 500px;
+    margin-top: 7%;
   }
 
   #wrapper{
@@ -32,7 +53,7 @@
 
   .screen{
     /*background-color: red;*/
-    height: 521px;
+    height: 518px;
     width: 295px;
     position: absolute;
     top: 85px;
@@ -51,12 +72,14 @@
     padding: 0px 10px 10px 20px;
     font-family: "Lato","Helvetica","Arial",sans-serif;
     color: #A1A1A1;
+    line-height: 1.4;
   }
 
-  .screen iframe{
+  .screen #struggle{
     border: 0;
-    height: 521px;
+    height: 350px;
     width: 290px;
+    padding: 0 2px 0 2px 0;
   }
 
   .logo{
@@ -66,10 +89,24 @@
   }
 
   .logo img{
-    width:100px;
+    width:200px;
     height: auto;
     padding: 40px 0 0 0px;
   }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1); }
+
+  ::-webkit-scrollbar-track {
+    background: none; }
+
+  ::-webkit-scrollbar-thumb {
+    /* background:#FF5858;*/
+    background: #6C6C6C;
+    border-radius: 0; }
 
 
 
@@ -78,15 +115,19 @@
 
 <body>
 
+<!-- <header>svift is dataviz tool with a mobile first approach</header>
+<p class="subtitle">Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.</p> -->
+
 <div id="wrapper">
   <div class="content">
     <img src="img/iphone.png">
     <div class="screen">
-      <div class="logo"><img src="quick-demo/img/logo_rp.svg"></div>
+      <div class="logo"><img src="img/logo_neutral.svg"></div>
       <h3>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.</h3>
       <h4>Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis.</h4>
       <p>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.</p>
-      <iframe src="quick-demo/chart-types/struggle.html"></iframe>
+      <iframe id="struggle" src="quick-demo/chart-types/struggle.html"></iframe>
+      <p>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.</p>
     </div>
   </div>
 </div>
